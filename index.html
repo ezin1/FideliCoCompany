@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FideliCo Company</title>
+</head>
+<body>
+    <div class="principal-title">
+        <div class="FideliCo-principal">
+            <a href="/index.html">
+                <img class="FideliCo-logo" src="./img/imageeee.png" alt="Imagem">
+            </a>
+        </div>
+        <div class="FideliCo-principal-list">
+            <div class="menu-toggle">&#9660;</div>
+            <ul class="FideliCo-menu">
+              <li>Inscrever-se</li>
+              <li><a href="./html/login.html" >Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="body-principal-company">
+        <div>
+            <h3>Fidelidade. Lealdade. Recompensas.</h3>
+            <p>
+                Aqui, você está prestes a embarcar em uma
+                jornada repleta de recompensas, exclusividade e gratidão. 
+                Estamos dedicados a oferecer a você uma experiência única e inesquecível, 
+                onde ser leal é sinônimo de ser recompensado.
+            </p>
+            <button class="register-page-principal" id="registerButton">Crie uma conta</button>
+            <a href="./html/login.html" class="login-text-principal-page">ou entre em uma conta existente</a> 
+        </div>
+        <div>
+            <img class="fidelico-gift-principal" src="./img/gift-principal.png" alt="Imagem">
+        </div>
+    </div>
+    <script>
+      const registerButton = document.getElementById('registerButton');
+      registerButton.addEventListener('click', () => {
+        window.location.href = './html/register.html';
+      });
+    </script>
+  
+    <script src="./js/list.js"></script>
+</body>
+</html>

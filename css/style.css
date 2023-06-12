@@ -1,0 +1,496 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .principal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); /* Adiciona um sombreado */
+    font-weight: bold;
+  }
+  
+  .FideliCo-principal {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .FideliCo-logo {
+    width: 160px;
+    margin-left: 45px;
+    margin-right: 5px;
+  }
+
+  .FideliCo-logo-cortada {
+    width: 60px;
+    box-shadow: 0 0 10px rgba(0, 92, 214, 0.3);
+  }
+  
+  .FideliCo-principal-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .FideliCo-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .FideliCo-menu li {
+    display: inline-flex;
+    margin-right: 30px;
+  }
+  
+  .fidelico-gift-principal {
+    width: 450px;
+  }
+  
+  .body-principal-company {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+
+  .forgot-password {
+    margin-top: 80px;
+    color: gray;
+  }
+  
+  .body-principal-company > div {
+    flex-basis: 50%;
+  }
+  
+  /* Media queries para dispositivos móveis */
+  @media (max-width: 768px) {
+    .body-principal-company {
+      flex-direction: column;
+      margin: 130px 20px;
+    }
+  
+    .body-principal-company > div {
+      flex-basis: 100%;
+    }
+  
+    .fidelico-gift-principal {
+      width: 100%;
+    }
+  }
+  
+  .menu-toggle {
+    display: none; /* Esconde a seta por padrão */
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .FideliCo-menu.collapsed {
+    display: none; /* Esconde a lista quando estiver colapsada */
+  }
+  
+  /* Media queries para dispositivos móveis */
+  @media (max-width: 768px) {
+  
+    .FideliCo-menu {
+      display: none; /* Esconde a lista por padrão */
+    }
+  
+    .menu-toggle {
+      display: block; /* Exibe a seta */
+    }
+  
+    .FideliCo-menu.collapsed {
+      display: none; /* Esconde a lista quando estiver colapsada */
+    }
+  
+    .FideliCo-menu.expanded {
+      display: block; /* Exibe a lista quando estiver expandida */
+    }
+  }
+
+
+.FideliCo-menu-container {
+    display: none; /* Esconde a div do menu por padrão */
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .FideliCo-menu.expanded .FideliCo-menu-container {
+    display: block; /* Exibe a div do menu quando estiver expandida */
+  }
+  
+  .FideliCo-menu-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .FideliCo-menu-container li {
+    margin-bottom: 10px;
+  }
+  
+  /* Media queries para dispositivos móveis */
+  @media (max-width: 768px) {
+    /* CSS anterior... */
+  
+    .FideliCo-menu-container {
+      display: none; /* Esconde a div do menu por padrão */
+    }
+  
+    .FideliCo-menu.expanded .FideliCo-menu-container {
+      display: block; /* Exibe a div do menu quando estiver expandida */
+    }
+  }
+  
+
+  .register-page-principal {
+    background: linear-gradient(to right,  #00C2FF,#1254FF);
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    font-size: 23px; /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 8px; /* Ajuste o preenchimento conforme necessário */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .register-page-principal + .login-text-principal-page {
+    text-align: center;
+    margin-top: 15px; /* Adiciona um espaçamento entre o botão e o link */
+    left: 30%;
+    transform: translateX(-50%);
+  }
+
+  .login-text-principal-page {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do texto do elemento pai */
+    color: gray;
+    font-size: 15px;
+    left: 50%;
+    position: relative;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .formlogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5); /* Adiciona um sombreado */
+  }
+  
+  .formlogin form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .page-login {
+    background: rgb(221, 221, 221);
+    font-family: "DM Sans", sans-serif;   
+  }
+
+  #submitLogin {
+    background: linear-gradient(to right,  #00C2FF,#1254FF);
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; 
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#cpfInput {
+  border: #1254FF solid 1px;
+  margin-left: 10px;
+}
+#nameInput {
+  border: #1254FF solid 1px;
+  margin-left: 10px;
+}
+
+input {
+    display: block;
+    margin: 15px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); /* Adiciona um sombreado */
+}
+
+.formregister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.submitRegisterDiv{
+  display: flex;
+  justify-content: center;
+}
+.h1-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 90px;
+  color: #1254FF;
+}
+
+#submitRegister {
+  background: linear-gradient(to right,  #00C2FF,#1254FF);
+  color: white;
+  font-size: 23px;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .message-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .close-button {
+    background: gray;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form-forgot-password {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 340px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5); /* Adiciona um sombreado */
+  }
+  
+  #submit-recup {
+    background: linear-gradient(to right,  #00C2FF,#1254FF);
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; 
+}
+.container-forgot {
+  display: flex;
+}
+
+input .formregister {
+  border: #00C2FF solid 1px;
+}
+
+.img-container {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+}
+  
+
+.buttons-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .buttons-home .line-1,
+  .buttons-home .line-2 {
+    flex-basis: 50%;
+  }
+  
+  .buttons-home .line-1 {
+    justify-content: flex-end;
+  }
+
+  .buttons-home .line-1 button {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 75px;
+    margin-left: 150px;
+    background:linear-gradient(to right,  #00C2FF,#1254FF);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); /* Adiciona um sombreado */
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  
+  
+  .buttons-home .line-2 {
+    justify-content: flex-start;
+  }
+
+  .buttons-home .line-2 button {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 75px;
+    margin-right: 150px;
+    background:linear-gradient(to right,  #00C2FF,#1254FF);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); /* Adiciona um sombreado */
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .buttons-home div {
+    margin-bottom: 10px;
+    flex-basis: 100%;
+  }
+  
+  .generate-code-button {
+    margin-top: 10px;
+    background: linear-gradient(to right,  #00C2FF,#1254FF);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .generate-card-button {
+    margin-top: 10px;
+    background: linear-gradient(to right,  #00C2FF,#1254FF);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  #codeDisplay {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right,  #00C2FF,#1254FF) 1;
+  }
+
+  #codeDisplay.code-copied {
+    background-color: #08FA8A; /* Altere a cor de fundo para verde */
+    color: #ffffff; /* Altere a cor do texto para branco */
+    border-style: none;
+  }
+
+  .button-logout {  
+    width: 40%;
+    height: 70px;
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+
+  .material-icons.icon-logout {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  
